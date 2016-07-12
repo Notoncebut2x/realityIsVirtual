@@ -374,15 +374,6 @@ body {
   z-index: 11;
   opacity: 1; }
 
-  section > h2 {
-    position: absolute !important;
-    top: 0 !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    left: 0 !important;
-    right: 0 !important;
-  }
-
 .reveal.center,
 .reveal.center .slides,
 .reveal.center .slides section {
