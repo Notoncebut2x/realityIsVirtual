@@ -54,10 +54,9 @@
             Reveal.initialize();
         </script>
         <script type="text/javascript">
-        Reveal.addEventListener('chart', function() {
           d3.select("#barChart").selectAll().remove()
           var margin = {top: 30, right: 30, bottom: 60, left: 40},
-              width = 950 - margin.left - margin.right,
+              width = 1000 - margin.left - margin.right,
               // var selection = d3.select("#barChart")
               // width = selection[0][0].clientWidth,
               height = 400 - margin.top - margin.bottom;
@@ -138,7 +137,6 @@
             d.num_changes = +d.num_changes;
             return d;
           }
-        });
         </script>
     </body>
 </html>
