@@ -60,8 +60,11 @@
                 <section data-background-transition="slide" data-background="img/josm.png">
                   <span style="font-size:70px;font-weight:bold;color:blue;position:fixed;top:390px;left:330px">Joint Training</span>
                 </section>
-                <section data-background-video="https://ia601406.us.archive.org/25/items/gov.fdr.8/gov.fdr.8_512kb.mp4" data-background-video-loop data-background-video-muted><span style="font-size:40px;font-weight:bold;color:blue;position:fixed;top:0px;left:400px">Metrics & Measuring Production</span></section>
-                <section data-state="chart" id="barChart"></section>
+                <section>
+                    <section data-background-video="https://ia601406.us.archive.org/25/items/gov.fdr.8/gov.fdr.8_512kb.mp4" data-background-video-loop data-background-video-muted><span style="font-size:40px;font-weight:bold;color:blue;position:fixed;top:0px;left:400px">Metrics & Measuring Production</span></section>
+                    <section data-state="chart" id="barChart"></section>
+                </section>
+
       <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
                 <section data-markdown data-separator="---">
                     <script type="text/template">
@@ -98,8 +101,6 @@
         ]
       });
     </script>
-
-
 
         <script type="text/javascript">
         Reveal.addEventListener('chart', function() {
