@@ -41,19 +41,67 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section><h2 align="left">The Reality is Virtual: U.S. College Students Assist MapGive and <font color="blue">US</font><font color="red">AID</font></h2></br><h4 align="left">Tom Gertin Dos/HIU & Rory Nealon <font color="blue">US</font><font color="red">AID</font>/OTI</h4></section>
-                <section>Background on VSFS</section>
-                <section>Background on HIU/Mapgive</section>
+                <section data-background-video="https://ia800403.us.archive.org/15/items/0141_Caught_Mapping_M00914_08_19_34_00/0141_Caught_Mapping_M00914_08_19_34_00.mp4" data-background-video-loop data-background-video-muted><div align ="left" style="background-color:rgba(128, 128, 128, 0.5);"><h2>The Reality is Virtual:</h2><h3>College Students Assist <font color="#667766">MapGive</font> & <font color="blue">US</font><font color="red">AID</font></h3></div></br></br></br></br></br></br></br></br></br></br><h4 style="background-color:rgba(128, 128, 128, 0.5);" align="left">Tom Gertin DoS/HIU & Rory Nealon <font color="blue">US</font><font color="red">AID</font>/OTI</h4></section>
+                <section>Insert Slide on HIU</section>
+                <section data-background-iframe="https://mapgive.state.gov/"></section>
                 <section data-background-iframe="https://otihub.github.io/oti-global/"><hearder id="mapTitle" style="background-color:rgba(128, 128, 128, 0.5);" margin: 200px;>USAID/Office of Transition Inititatives</header></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br><h4> </h4></section>
-                <section>What did your students do?</section>
-                <section data-state="chart" id="barChart"></section>
+                <section data-background-iframe="https://vsfs.state.gov/"></section>
+                <section data-background-iframe="https://taylorhixson.carto.com/viz/db555af6-3f29-11e6-a4ea-0e3a376473ab/embed_map"></section>
+                <section data-background-video="https://ia802701.us.archive.org/4/items/CharlesLindbergTakesOff/CharlesLindbergTakesOff_512kb.mp4" data-background-video-loop data-background-video-muted><span style="font-size:70px;font-weight:bold;color:blue">Taking Off!</span></section>
+                <section data-markdown data-separator="---">
+                    <script type="text/template">
+                        ## Itinerary of Program
+                        communication tools: Slack, e-mail, hangouts
+                        ---
+                        ## Diversity of Projects
+                        ...
+                    </script>
+                </section>
+                <section data-background-transition="slide" data-background="img/josm.png">
+                  <span style="font-size:70px;font-weight:bold;color:blue;position:fixed;top:390px;left:330px">Joint Training</span>
+                </section>
+                <section>
+                    <section data-background-video="https://ia601406.us.archive.org/25/items/gov.fdr.8/gov.fdr.8_512kb.mp4" data-background-video-loop data-background-video-muted><span style="font-size:40px;font-weight:bold;color:blue;position:fixed;top:0px;left:400px">Metrics & Measuring Production</span></section>
+                    <section data-state="chart" id="barChart"></section>
+                </section>
+
       <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
+                <section data-markdown data-separator="---">
+                    <script type="text/template">
+                        ## Strengths of the Program
+                        Encourage to apply
+                        ---
+                        ## Lessons Learned
+                        Surveys
+                        ---
+                        ## Looking Ahead
+                        Peace Corps
+                    </script>
+                </section>
             </div>
         </div>
+
+        <script src="lib/js/head.min.js"></script>
         <script src="js/reveal.js"></script>
-        <script>
-            Reveal.initialize();
-        </script>
+
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/notes/notes.js' }
+        ]
+      });
+    </script>
+
         <script type="text/javascript">
         Reveal.addEventListener('chart', function() {
           d3.select("#barChart").selectAll().remove()
