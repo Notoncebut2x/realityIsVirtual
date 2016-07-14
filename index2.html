@@ -42,18 +42,60 @@
         <div class="reveal">
             <div class="slides">
                 <section><h2 align="left">The Reality is Virtual: U.S. College Students Assist MapGive and <font color="blue">US</font><font color="red">AID</font></h2></br><h4 align="left">Tom Gertin Dos/HIU & Rory Nealon <font color="blue">US</font><font color="red">AID</font>/OTI</h4></section>
-                <section>Background on VSFS</section>
-                <section>Background on HIU/Mapgive</section>
+                
+                <section data-background-iframe="http://mapgive.state.gov/"></section>
                 <section data-background-iframe="https://otihub.github.io/oti-global/"><hearder id="mapTitle" style="background-color:rgba(128, 128, 128, 0.5);" margin: 200px;>USAID/Office of Transition Inititatives</header></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br><h4> </h4></section>
-                <section>What did your students do?</section>
+                <section data-background-iframe="http://vsfs.state.gov/"></section>
+                <section data-background-iframe="https://taylorhixson.carto.com/viz/db555af6-3f29-11e6-a4ea-0e3a376473ab/embed_map"></section>
+                <section data-markdown data-separator="---">
+                    <script type="text/template">
+                        ## How were the interns used, What did they do?
+                        Slide 1
+                        ---
+                        ## Demo 1
+                        Slide 2
+                    </script>
+                </section>
                 <section data-state="chart" id="barChart"></section>
       <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
+                <section data-markdown data-separator="---">
+                    <script type="text/template">
+                        ## How were the interns used, What did they do?
+                        Slide 1
+                        ---
+                        ## Demo 1
+                        Slide 2
+                        ---
+                        ## Demo 1
+                        Slide 3
+                    </script>
+                </section>
             </div>
         </div>
+
+        <script src="lib/js/head.min.js"></script>
         <script src="js/reveal.js"></script>
-        <script>
-            Reveal.initialize();
-        </script>
+
+
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/notes/notes.js' }
+        ]
+      });
+    </script>
+
+
+
         <script type="text/javascript">
         Reveal.addEventListener('chart', function() {
           d3.select("#barChart").selectAll().remove()
