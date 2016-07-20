@@ -140,9 +140,10 @@
 
                 <section data-background-iframe="https://masonacademy.carto.com/viz/62a807f4-4d3c-11e6-aa0f-0ee66e2c9693/embed_map"></section>
 
-                <section data-state="chart" id="barChart"></section>
-
-                <section><img style="background-size: cover" src="img/number_of_changes_per_wk.png"></section>
+                <section>
+                  <section data-state="chart" id="barChart"></section>
+                  <section><img style="background-size: cover" src="img/number_of_changes_per_wk.png"></section>
+                </section>
 
                 <section data-background-image="img/fbi.gif"></br></br></br><h3>Looking Forward</h3>
 
@@ -150,9 +151,10 @@
                     </br><div style="background-color:rgba(128, 128, 128, 0.5);">
                         <ul>
                             <li>Welcome<font color="#004B97"> Peace Corps</font>!</li>
-                            <li>Shared <font face="courier">#</font> plus individual project <font face="courier">#</font> for chageset comments</li>
-                            <li>Joint Trainings between the three offices, recorded for those who can't make it</li>
+                            <li>Lessons Learned</li>
                             <li>Contributing to existing OSM resources (the wiki, Learn OSM, etc...)</li>
+                            <li>Shared <font face="courier">#</font> plus individual project <font face="courier">#</font> for changeset comments</li>
+                            <li>Joint Trainings between the three offices, recorded for those who can't make it</li>
                             <li><font color="#667766">MapGive</font> vs OTI vs <font color="#004B97"> Peace Corps</font> Mapoff???</li>
                         </ul>
                     </div>
@@ -195,9 +197,6 @@
         // Optional libraries used to extend on reveal.js
         dependencies: [
           { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'plugin/notes/notes.js' }
         ]
       });
